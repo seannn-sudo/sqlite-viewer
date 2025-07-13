@@ -72,7 +72,7 @@ function initialize() {
 
     //Check url to load remote DB
     $.urlParam = function (name) {
-        let results = new RegExp( `[\?&]${name}=([^&#]*)`).exec(window.location.href);
+        let results = new RegExp( `[?&]${name}=([^&#]*)`).exec(window.location.href);
         if (results == null) {
             return null;
         } else {
